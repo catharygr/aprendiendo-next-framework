@@ -4,6 +4,7 @@
 
 .container {
   outline: 1px solid red;
-  /* margin: 0 auto;
-  width: 600px; */
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px;
 }
