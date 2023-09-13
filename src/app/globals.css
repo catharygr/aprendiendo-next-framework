@@ -1,5 +1,5 @@
 body {
-  background-color: aqua;
+  background-color: #222;
   display: grid;
   place-items: center;
   min-height: 100vh;

@@ -1,3 +1,14 @@
 .titulo {
   color: red;
 }
+
+.about {
+  display: flex;
+  justify-content: center;
+  color: purple;
+}
+
+.container {
+  outline: 1px solid pink;
+  padding: 3rem;
+}
