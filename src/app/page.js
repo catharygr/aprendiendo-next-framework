@@ -14,7 +14,7 @@ export default function Home() {
         <p>Tres enlaces dinámicos</p>
         <div className={styles.linkContainer}>
           {data.map((item) => (
-            <Link href={`/block/${item.id}`} key={item.id}>
+            <Link href={`/blog/${item.id}`} key={item.id}>
               {item.name}
             </Link>
           ))}

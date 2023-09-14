@@ -1,14 +1,14 @@
 export const data = [
   {
-    id: 1,
+    id: "1",
     name: "Caty",
   },
   {
-    id: 2,
+    id: "2",
     name: "Miguel",
   },
   {
-    id: 3,
+    id: "3",
     name: "Luis",
   },
 ];
