@@ -8,6 +8,19 @@
 }
 
 .containerAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 3rem;
   outline: 1px solid pink;
+}
+
+.linkAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linkAbout a {
+  color: palevioletred;
 }
