@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { data } from "./data";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Link className={styles.about} href="/about">
         Sobre mi
       </Link>
+      <p>Tres enlaces dinámicos</p>
     </main>
   );
 }
