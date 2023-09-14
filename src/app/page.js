@@ -1,11 +1,14 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Image from "next/image";
+import nosotros from "@/app/image/nosotros.jpg";
 import Link from "next/link";
 import { data } from "./data";
 
 export default function Home() {
   return (
     <main className={styles.container}>
+      <Image src={nosotros} alt="Fotos de una familia" />
+
       <h1 className={styles.titulo}>Aprendiendo Next.js</h1>
       <Link className={styles.about} href="/about">
         Sobre mi
