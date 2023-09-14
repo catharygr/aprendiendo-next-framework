@@ -15,3 +15,11 @@
   outline: 1px solid pink;
   padding: 3rem;
 }
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}

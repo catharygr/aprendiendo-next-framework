@@ -10,7 +10,16 @@ export default function Home() {
       <Link className={styles.about} href="/about">
         Sobre mi
       </Link>
-      <p>Tres enlaces dinámicos</p>
+      <div>
+        <p>Tres enlaces dinámicos</p>
+        <div className={styles.linkContainer}>
+          {data.map((item) => (
+            <Link href={`/block/${item.id}`} key={item.id}>
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </div>
     </main>
   );
 }
