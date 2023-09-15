@@ -3,10 +3,15 @@ import Image from "next/image";
 import nosotros from "@/app/image/nosotros.jpg";
 import Link from "next/link";
 import { data } from "./data";
+import { nuevaData } from "@/app/nuevaData";
 
-export const metadata = {
-  title: "Next.js",
-};
+export async function generateMetadata({ params }) {
+  const userID = params.userID;
+  const usuario = nuevaData.find((usuario) => usuario.id === userID);
+  return {
+    title: `Sobre ${usuario.name}`,
+  };
+}
 
 export default function Home() {
   return (
