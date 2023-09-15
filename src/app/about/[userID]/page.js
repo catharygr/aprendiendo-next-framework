@@ -1,7 +1,4 @@
 import { nuevaData } from "@/app/nuevaData";
-// export const metadata = {
-//   title: "Sobre mi",
-// };
 
 export async function generateMetadata({ params }) {
   const userID = params.userID;

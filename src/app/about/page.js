@@ -2,6 +2,10 @@ import Link from "next/link";
 import styles from "./about.module.css";
 import { nuevaData } from "@/app/nuevaData";
 
+export const metadata = {
+  title: "Sobre",
+};
+
 export default function About() {
   return (
     <div className={styles.containerAbout}>
