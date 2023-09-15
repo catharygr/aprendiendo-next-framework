@@ -4,6 +4,10 @@ import nosotros from "@/app/image/nosotros.jpg";
 import Link from "next/link";
 import { data } from "./data";
 
+export const metadata = {
+  title: "Next.js",
+};
+
 export default function Home() {
   return (
     <main className={styles.container}>
