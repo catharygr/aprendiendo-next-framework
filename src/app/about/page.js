@@ -1,10 +1,13 @@
 import Link from "next/link";
 import styles from "./about.module.css";
 import { nuevaData } from "@/app/nuevaData";
+import Boton from "./Boton";
 
-export const metadata = {
-  title: "Sobre",
-};
+export async function generateMetadata() {
+  return {
+    title: "Sobre",
+  };
+}
 
 export default function About() {
   return (
@@ -18,6 +21,9 @@ export default function About() {
           </Link>
         ))}
       </div>
+      <p>
+        Color del estado es: <Boton />
+      </p>
     </div>
   );
 }
