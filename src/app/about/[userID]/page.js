@@ -16,9 +16,9 @@ export default function Usuario({ params }) {
 
   const usuario = nuevaData.find((usuario) => usuario.id === userID);
   return (
-    <>
+    <div>
       <p>{usuario.name}</p>
       <p>{usuario.email}</p>
-    </>
+    </div>
   );
 }
