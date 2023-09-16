@@ -2,7 +2,7 @@
 "use client";
 import { data } from "@/app/data";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function BlogPagina({ params }) {
   const blogID = params.blogID;
@@ -10,19 +10,29 @@ export default function BlogPagina({ params }) {
 
   const usuario = data.find((usuario) => usuario.id === blogID);
 
+  const [contador, setContador] = useState(5);
   useEffect(() => {
-    const tiempo = setTimeout(() => {
-      router.push("/");
-    }, 5000);
+    const interval = setInterval(() => {
+      setContador((prevContador) => {
+        if (prevContador === 1) {
+          clearInterval(interval);
+          router.push("/");
+        }
+        return prevContador - 1;
+      });
+    }, 1000);
+
     return () => {
-      clearTimeout(tiempo);
+      clearInterval(interval);
     };
   }, []);
 
   return (
     <div>
       <p>{usuario.name}</p>
-      <p>Regresaremos en dos segundo</p>
+      <p>
+        Regresaremos en {contador} segundo{contador !== 1 ? "s" : ""}
+      </p>
     </div>
   );
 }
