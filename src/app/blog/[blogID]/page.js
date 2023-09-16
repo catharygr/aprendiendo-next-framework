@@ -1,22 +1,27 @@
+"use client";
 import { data } from "@/app/data";
-
-export async function generateMetadata({ params }) {
-  const blogID = params.blogID;
-
-  const usuario = data.find((usuario) => usuario.id === blogID);
-  return {
-    title: usuario.name,
-  };
-}
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function BlogPagina({ params }) {
   const blogID = params.blogID;
+  const router = useRouter();
 
   const usuario = data.find((usuario) => usuario.id === blogID);
 
+  useEffect(() => {
+    const tiempo = setTimeout(() => {
+      router.push("/");
+    }, 2000);
+    return () => {
+      clearTimeout(tiempo);
+    };
+  }, []);
+
   return (
-    <>
+    <div>
       <p>{usuario.name}</p>
-    </>
+      <p>Regresaremos en dos segundo</p>
+    </div>
   );
 }
