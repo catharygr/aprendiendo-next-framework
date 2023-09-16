@@ -24,3 +24,14 @@
   margin-top: 2rem;
   gap: 1rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #000;
+  color: #fff;
+  margin-top: 2rem;
+}
