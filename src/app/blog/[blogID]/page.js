@@ -10,6 +10,8 @@ export default function BlogPagina({ params }) {
 
   const usuario = data.find((usuario) => usuario.id === blogID);
 
+  // Poner un contador de tiempo para que regrese a la página principal
+
   useEffect(() => {
     const tiempo = setTimeout(() => {
       router.push("/");
