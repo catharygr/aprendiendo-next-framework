@@ -14,7 +14,7 @@ export default function Home() {
         Sobre mi
       </Link>
       <div>
-        <p>Tres enlaces dinámicos</p>
+        <p>Cuatros enlaces dinámicos</p>
         <div className={styles.linkContainer}>
           {data.map((item) => (
             <Link href={`/blog/${item.id}`} key={item.id}>

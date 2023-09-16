@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { data } from "@/app/data";
 import { useRouter } from "next/navigation";
