@@ -22,6 +22,10 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <br />
+        <Link className={styles.about} href={"/latex"}>
+          Latex
+        </Link>
       </div>
     </main>
   );
