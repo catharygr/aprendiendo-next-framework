@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import styles from "./emoji.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function EmojiPage() {
   const [esMostrado, setEsMostrado] = React.useState(false);
@@ -22,6 +23,8 @@ export default function EmojiPage() {
   return (
     <section>
       <div className={styles.container}>
+        <Link href="/">Inicio</Link>
+
         <h1>Emoji</h1>
         <p>
           Los emojis son pequeñas representaciones gráficas que se utilizan en
