@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid pink;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f00;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
