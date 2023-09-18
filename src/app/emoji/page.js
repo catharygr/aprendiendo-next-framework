@@ -31,22 +31,39 @@ export default function EmojiPage() {
         Esto facilita la comunicación entre personas que hablan diferentes
         idiomas
       </p>
-      . Personalización: Puedes personalizar tu comunicación eligiendo emojis
-      que reflejen tu estilo y personalidad. Por ejemplo, algunos usuarios
-      prefieren usar emojis divertidos o creativos, mientras que otros pueden
-      ser más formales. Evitar Malentendidos: En ocasiones, los mensajes de
-      texto pueden ser ambiguos. Los emojis pueden ayudar a evitar malentendidos
-      al agregar contexto emocional. Marketing y Comunicación de Marca: Las
-      empresas y marcas también utilizan emojis en sus comunicaciones para
-      conectarse con su audiencia y transmitir mensajes de manera efectiva.
-      Abuso o Exceso: Aunque los emojis pueden ser útiles, su uso excesivo o
-      inapropiado puede restar seriedad a la comunicación. Es importante
-      encontrar un equilibrio. Evolución Continua: La selección de emojis sigue
-      expandiéndose con el tiempo, y nuevas adiciones se hacen regularmente para
-      reflejar la diversidad cultural y emocional. En resumen, los emojis son
-      una forma popular y efectiva de enriquecer la comunicación digital al
-      agregar una dimensión emocional y contextual a los mensajes de texto y las
-      interacciones en línea.
+      <p>
+        Personalización: Puedes personalizar tu comunicación eligiendo emojis
+        que reflejen tu estilo y personalidad.
+      </p>
+      <p>
+        Por ejemplo, algunos usuarios prefieren usar emojis divertidos o
+        creativos, mientras que otros pueden ser más formales.{" "}
+      </p>
+      <p>
+        Evitar Malentendidos: En ocasiones, los mensajes de texto pueden ser
+        ambiguos. Los emojis pueden ayudar a evitar malentendidos al agregar
+        contexto emocional.
+      </p>
+      <p>
+        Marketing y Comunicación de Marca: Las empresas y marcas también
+        utilizan emojis en sus comunicaciones para conectarse con su audiencia y
+        transmitir mensajes de manera efectiva.
+      </p>
+      <p>
+        Abuso o Exceso: Aunque los emojis pueden ser útiles, su uso excesivo o
+        inapropiado puede restar seriedad a la comunicación.
+      </p>
+      <p>Es importante encontrar un equilibrio. </p>
+      <p>
+        Evolución Continua: La selección de emojis sigue expandiéndose con el
+        tiempo, y nuevas adiciones se hacen regularmente para reflejar la
+        diversidad cultural y emocional.
+      </p>
+      <p>
+        En resumen, los emojis son una forma popular y efectiva de enriquecer la
+        comunicación digital al agregar una dimensión emocional y contextual a
+        los mensajes de texto y las interacciones en línea.
+      </p>
     </div>
   );
 }

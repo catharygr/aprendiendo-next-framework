@@ -35,7 +35,7 @@ export default function Home() {
           Toggle
         </Link>
         <br />
-        <Link className={styles.about} href={"/anime"}>
+        <Link className={styles.about} href={"/emoji"}>
           Emoji
         </Link>
       </div>
