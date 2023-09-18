@@ -11,6 +11,8 @@ export default function FramerPage() {
       <h1 className={styles.h1}>Framer Motion</h1>
       <motion.div
         className={styles.pelota}
+        initial={false}
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}
         animate={{
           scale: esFramer ? 2 : 1.5,
           y: esFramer ? -60 : 30,
