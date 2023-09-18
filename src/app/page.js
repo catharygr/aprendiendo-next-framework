@@ -38,6 +38,10 @@ export default function Home() {
         <Link className={styles.about} href={"/emoji"}>
           Emoji
         </Link>
+        <br />
+        <Link className={styles.about} href={"/framer-layout"}>
+          Framer Layout
+        </Link>
       </div>
     </main>
   );

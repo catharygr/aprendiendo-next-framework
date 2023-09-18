@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  background-color: goldenrod;
+  font-size: 3rem;
+}
+
+.btn {
+  position: absolute;
+  margin: 2rem auto;
+  width: 100px;
+  height: 50px;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: whitesmoke;
+}
