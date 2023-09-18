@@ -26,7 +26,14 @@ export default function Home() {
         <Link className={styles.about} href={"/latex"}>
           Latex
         </Link>
-        <Link href={"/framer"}>Framer Motion</Link>
+        <br />
+        <Link className={styles.about} href={"/framer"}>
+          Framer Motion
+        </Link>
+        <br />
+        <Link className={styles.about} href={"/toggle"}>
+          Toggle
+        </Link>
       </div>
     </main>
   );
