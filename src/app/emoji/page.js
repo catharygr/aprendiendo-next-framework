@@ -20,7 +20,7 @@ export default function EmojiPage() {
 
   const translateX = esMostrado ? "0%" : "100%";
   return (
-    <div ref={wrapperRef} className={(styles.container, styles.wrapper)}>
+    <div ref={wrapperRef} className={styles.container}>
       <h1>Emoji</h1>
       <p>
         Los emojis son pequeñas representaciones gráficas que se utilizan en
@@ -81,7 +81,7 @@ export default function EmojiPage() {
       </p>
 
       <motion.div
-        className={styles.character}
+        className={styles.caracter}
         transition={{
           type: "spring",
           stiffness: esMostrado ? 300 : 600,
