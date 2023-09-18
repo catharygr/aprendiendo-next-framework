@@ -16,6 +16,7 @@
   border-radius: 100px;
   padding: 6px;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .pelota {

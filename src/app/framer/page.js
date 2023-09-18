@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./framer.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function FramerPage() {
   const [esFramer, setEsFramer] = React.useState(true);
@@ -21,6 +22,7 @@ export default function FramerPage() {
       <button className={styles.btn} onClick={() => setEsFramer(!esFramer)}>
         Toggle
       </button>
+      <Link href="/">Inicio</Link>
     </div>
   );
 }

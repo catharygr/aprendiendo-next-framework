@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Latex = dynamic(() => import("react-latex-next"));
 
@@ -20,6 +21,9 @@ function LatexEditor() {
 
       <h2>Output:</h2>
       <Latex>{expression}</Latex>
+      <br />
+      <br />
+      <Link href="/">Inicio</Link>
     </div>
   );
 }
