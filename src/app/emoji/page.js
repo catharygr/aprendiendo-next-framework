@@ -1,12 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./emoji.module.css";
 import { motion } from "framer-motion";
 
 export default function EmojiPage() {
+  const [esMostrado, setEsMostrado] = React.useState(false);
+
+  const wrapperRef = React.useRef();
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+
+      setEsMostrado(entry.isIntersecting);
+    });
+
+    observer.observe(wrapperRef.current);
+  }, []);
+
+  const translateX = esMostrado ? "0%" : "100%";
   return (
-    <div className={styles.container}>
-      <h1 className={styles.h1}>Emoji</h1>
+    <div ref={wrapperRef} className={(styles.container, styles.wrapper)}>
+      <h1>Emoji</h1>
       <p>
         Los emojis son pequeñas representaciones gráficas que se utilizan en
         mensajes de texto, redes sociales y comunicación digital para expresar
@@ -64,6 +79,21 @@ export default function EmojiPage() {
         comunicación digital al agregar una dimensión emocional y contextual a
         los mensajes de texto y las interacciones en línea.
       </p>
+
+      <motion.div
+        className={styles.character}
+        transition={{
+          type: "spring",
+          stiffness: esMostrado ? 300 : 600,
+          damping: esMostrado ? 70 : 40,
+          restDelta: 0.01,
+        }}
+        animate={{
+          x: translateX,
+        }}
+      >
+        👻
+      </motion.div>
     </div>
   );
 }

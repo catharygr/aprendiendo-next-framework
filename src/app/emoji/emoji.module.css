@@ -7,3 +7,15 @@
   max-width: 800px;
   padding: 0 1rem;
 }
+
+.wrapper {
+  position: relative;
+  pointer-events: none;
+}
+.character {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 170px;
+  will-change: transform;
+}
