@@ -22,9 +22,8 @@ export default function EmojiPage() {
   const translateX = esMostrado ? "0%" : "100%";
   return (
     <section>
+      <Link href="/">Inicio</Link>
       <div className={styles.container}>
-        <Link href="/">Inicio</Link>
-
         <h1>Emoji</h1>
         <p>
           Los emojis son pequeñas representaciones gráficas que se utilizan en

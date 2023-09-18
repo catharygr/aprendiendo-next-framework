@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import styles from "./layout.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function LayoutPage() {
-  const [esToggled, setEsToggled] = useState(true);
+  const [esToggled, setEsToggled] = useState(false);
   return (
     <div>
       <motion.div
@@ -19,6 +20,8 @@ export default function LayoutPage() {
       <button onClick={() => setEsToggled(!esToggled)} className={styles.btn}>
         Toggle
       </button>
+      <br />
+      <Link href="/">Inicio</Link>
     </div>
   );
 }
