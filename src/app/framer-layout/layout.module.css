@@ -1,28 +1,37 @@
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-}
-
-.box {
-  text-align: center;
+  align-items: center;
+  background-color: goldenrod;
+  color: black;
   width: 300px;
   height: 400px;
-  background-color: goldenrod;
-  font-size: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  will-change: true;
+  font-size: 2rem;
+}
+
+.container.box {
+  position: absolute;
+  inset: 0;
+  width: revert;
+  height: revert;
+  z-index: -100;
 }
 
 .btn {
-  position: absolute;
   margin: 2rem auto;
-  width: 100px;
-  height: 50px;
+  padding: 0.5rem 1rem;
   background-color: orangered;
   border: none;
   border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
   color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  scale: 1.1;
 }

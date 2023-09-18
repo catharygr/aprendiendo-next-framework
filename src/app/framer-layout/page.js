@@ -4,13 +4,13 @@ import styles from "./layout.module.css";
 import { motion } from "framer-motion";
 
 export default function LayoutPage() {
-  const [esToggled, setEsToggled] = useState(false);
+  const [esToggled, setEsToggled] = useState(true);
   return (
-    <div className={styles.container}>
+    <div>
       <motion.div
         layout={true}
         transition={SPRING}
-        className={`container ${esToggled ? styles.box : ""}`}
+        className={`${styles.container} ${esToggled ? styles.box : ""}`}
       >
         <motion.p layout="position" transition={SPRING}>
           Layout
