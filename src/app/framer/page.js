@@ -8,12 +8,12 @@ export default function FramerPage() {
 
   return (
     <div className={styles.container}>
-      <h1>Framer Motion</h1>
+      <h1 className={styles.h1}>Framer Motion</h1>
       <motion.div
         className={styles.pelota}
         animate={{
-          scale: 2,
-          y: -50,
+          scale: esFramer ? 2 : 1.5,
+          y: esFramer ? -60 : 30,
         }}
       />
       <button className={styles.btn} onClick={() => setEsFramer(!esFramer)}>
