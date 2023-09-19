@@ -1,6 +1,7 @@
 .container {
   border: 1px solid red;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .ul {
@@ -8,6 +9,20 @@
   gap: 1rem;
 }
 
+.ul li {
+  position: relative;
+  padding: 0.5rem;
+}
+
 .a {
+  display: block;
   text-decoration: none;
+}
+
+.fondo {
+  position: absolute;
+  inset: 0;
+  background-color: #666;
+  border-radius: 10px;
+  z-index: -1;
 }

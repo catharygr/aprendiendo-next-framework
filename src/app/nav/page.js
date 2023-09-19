@@ -5,18 +5,26 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Nav() {
+  const [hoveredNavItem, setHoveredNavItem] = React.useState(null);
   return (
-    <div className={styles.container}>
+    <nav
+      className={styles.container}
+      onMouseLeave={() => setHoveredNavItem(null)}
+    >
       <ul className={styles.ul}>
-        {data.map((item) => (
-          <li key={item.slug}>
-            <Link className={styles.a} href={item.url}>
-              {item.text}
+        {data.map(({ slug, text, url }) => (
+          <li key={slug}>
+            {hoveredNavItem === slug && (
+              <motion.div layoutId="jajaja" className={styles.fondo} />
+            )}
+
+            <Link className={styles.a} href={url}>
+              {text}
             </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }
 
