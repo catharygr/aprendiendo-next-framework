@@ -19,7 +19,7 @@ export default function Nav() {
               <motion.div
                 layoutId={id}
                 className={styles.fondo}
-                animate={{
+                initial={{
                   borderRadius: 10,
                 }}
               />
