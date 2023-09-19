@@ -9,7 +9,6 @@
 
 .btn {
   display: flex;
-  justify-content: flex-end;
   width: 100px;
   height: 50px;
   background-color: transparent;
