@@ -18,7 +18,11 @@ export default function Nav() {
               <motion.div layoutId="jajaja" className={styles.fondo} />
             )}
 
-            <Link className={styles.a} href={url}>
+            <Link
+              className={styles.a}
+              href={url}
+              onMouseEnter={() => setHoveredNavItem(slug)}
+            >
               {text}
             </Link>
           </li>

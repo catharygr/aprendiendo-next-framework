@@ -11,12 +11,12 @@
 
 .ul li {
   position: relative;
-  padding: 0.5rem;
 }
 
 .a {
   display: block;
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 .fondo {
