@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState, useId } from "react";
 import styles from "./nav.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Nav() {
-  const [hoveredNavItem, setHoveredNavItem] = React.useState(null);
+  const [hoveredNavItem, setHoveredNavItem] = useState(null);
+  const id = useId();
   return (
     <nav
       className={styles.container}
@@ -15,7 +16,13 @@ export default function Nav() {
         {data.map(({ slug, text, url }) => (
           <li key={slug}>
             {hoveredNavItem === slug && (
-              <motion.div layoutId="jajaja" className={styles.fondo} />
+              <motion.div
+                layoutId={id}
+                className={styles.fondo}
+                animate={{
+                  borderRadius: 10,
+                }}
+              />
             )}
 
             <Link
