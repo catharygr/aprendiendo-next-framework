@@ -46,6 +46,10 @@ export default function Home() {
         <Link className={styles.about} href={"/toggle-layout"}>
           Toggle Layout
         </Link>
+        <br />
+        <Link className={styles.about} href={"/nav"}>
+          Nav
+        </Link>
       </div>
     </main>
   );
